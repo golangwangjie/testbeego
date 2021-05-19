@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-capable" content="yes">
+</head>
+<body>
+    <p>
+		<button id="testmysql">T-mysql</button>
+		<button id="testmysqlIndexusers">T-mysql-Index-Users</button>
+	</p>
+    <p>
+		<button id="testredis">T-redis</button>
+		<button id="testredisdel">T-redis-del</button>
+	</p>
+    <p>
+		<button id="testzookeepers">T-zookeepers</button>
+		<button id="testzookeeperslock">T-zookeepers-Lock</button>
+		<button id="testzookeeperssub">T-zookeepers-Sub</button>
+		<button id="testzookeeperspub">T-zookeepers-Pub</button>
+	</p>
+</body>
+
+<script src="static/js/jquery.min.js"></script>
+<script type="text/javascript">
+
+$("#testmysql").click(function(){    
+    $.ajax({
+			type:"POST",
+			url:"/testmysql",
+			dataType:"json",
+			success: function(){
+				 console.log(123);
+			}
+		})
+})
+
+$("#testmysqlIndexusers").click(function(){    
+    $.ajax({
+			type:"POST",
+			url:"/testmysqlIndexusers",
+			dataType:"json",
+			success: function(){
+				 console.log(123);
+			}
+		})
+})
+
+$("#testredis").click(function(){    
+    $.ajax({
+			type:"POST",
+			url:"/testredis",
+			dataType:"json",
+			success: function(){
+				 console.log(123);
+			}
+		})
+})
+
+$("#testredisdel").click(function(){    
+    $.ajax({
+			type:"POST",
+			url:"/testredisdel",
+			dataType:"json",
+			success: function(){
+				 console.log(123);
+			}
+		})
+})
+
+$("#testzookeepers").click(function(){    
+    $.ajax({
+			type:"POST",
+			url:"/testzookeepers",
+			dataType:"json",
+			success: function(){
+				 console.log(123);
+			}
+		})
+})
+
+$("#testzookeeperslock").click(function(){    
+    $.ajax({
+			type:"POST",
+			url:"/testzookeeperslock",
+			dataType:"json",
+			success: function(){
+				 console.log(123);
+			}
+		})
+})
+
+$("#testzookeeperssub").click(function(){    
+    $.ajax({
+			type:"POST",
+			url:"/testzookeeperssub",
+			dataType:"json",
+			success: function(){
+				 console.log(123);
+			}
+		})
+})
+
+$("#testzookeeperspub").click(function(){    
+    $.ajax({
+			type:"POST",
+			url:"/testzookeeperspub",
+			dataType:"json",
+			success: function(){
+				 console.log(123);
+			}
+		})
+})
+
+</script>
+</html>
